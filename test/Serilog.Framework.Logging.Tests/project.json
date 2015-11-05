@@ -1,7 +1,7 @@
 ﻿{
     "dependencies": {
-        "Microsoft.Framework.Logging": "1.0.0-beta8",
-        "Serilog.Framework.Logging": "1.0.0-*",
+        "Microsoft.Extensions.Logging": "1.0.0-rc1-*",
+        "Serilog.Framework.Logging": "",
         "NUnitTestAdapter.WithFramework": "2.0.0"
     },
     "frameworks": {

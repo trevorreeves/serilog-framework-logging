@@ -2,16 +2,16 @@
 // Licensed under the Apache License, Version 2.0. See License.txt in the project root for license information.
 
 using System;
-#if NET45 || DNX451
+#if NET451
 using System.Runtime.Remoting;
 using System.Runtime.Remoting.Messaging;
 #else
 using System.Threading;
 #endif
-using Microsoft.Framework.Logging;
+using Microsoft.Extensions.Logging;
 using Serilog.Core;
 using Serilog.Events;
-using FrameworkLogger = Microsoft.Framework.Logging.ILogger;
+using FrameworkLogger = Microsoft.Extensions.Logging.ILogger;
 
 namespace Serilog.Framework.Logging
 {
@@ -57,7 +57,7 @@ namespace Serilog.Framework.Logging
             }
         }
 
-#if DNXCORE50
+#if DOTNET5_4
         private AsyncLocal<SerilogLoggerScope> _value = new AsyncLocal<SerilogLoggerScope>();
         public SerilogLoggerScope CurrentScope
         {

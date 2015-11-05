@@ -8,26 +8,22 @@
 
   "dependencies": {
     "Serilog": "1.5.11",
-    "Microsoft.Framework.Logging.Abstractions": "1.0.0-beta8"
+    "Microsoft.Extensions.Logging.Abstractions": "1.0.0-rc1-*"
   },
 
   "frameworks": {
-    "net45": {
+    "net451": {
       "frameworkAssemblies": {
         "System.Runtime": ""
       }
     },
-    "dnx451": {
-      "frameworkAssemblies": {
-        "System.Runtime": ""
-      }
-    },
-    "dnxcore50": {
+    "dotnet5.4": {
       "dependencies": {
-        "System.Collections": "4.0.10-beta-23019",
-        "System.Linq": "4.0.0-beta-23019",
-        "System.Threading": "4.0.10-beta-23019",
-        "Microsoft.CSharp": "4.0.0-beta-23019"
+        "System.Collections": "4.0.11-beta-*",
+        "System.Collections.Concurrent": "4.0.11-beta-*",
+        "System.Linq": "4.0.1-beta-*",
+        "System.Threading": "4.0.11-beta-*",
+        "Microsoft.CSharp": "4.0.1-beta-*"
       }
     }
   }
